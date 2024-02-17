@@ -13,7 +13,7 @@ jobs:
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.HOST }}
-          username: ${{ secrets.NAME }}
-          password: ${{ secrets.SENHA }}
+          server: ${{ secrets.ftp_host }}
+          username: ${{ secrets.ftp_name }}
+          password: ${{ secrets.ftp_senha }}
           server-dir: public_html/thema02/
