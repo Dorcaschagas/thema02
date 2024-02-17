@@ -16,4 +16,4 @@ jobs:
         server: ${{ secrets.HOST}}
         username: ${{ secrets.NAME}}
         password: ${{ secrets.SENHA}}
-        server dir: public_html/thema01/
+        server dir: public_html/thema02/

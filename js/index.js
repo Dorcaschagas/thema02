@@ -6,3 +6,5 @@ $(document).ready(function(){
 function loadPages(pages) {
     $(".body").load(`${pages}.html`)
 }
+
+
