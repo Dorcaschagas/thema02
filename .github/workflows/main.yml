@@ -1,5 +1,5 @@
-on: push
-name: 🚀 
+on: 
+push: 🚀 
   branches:
     - main
 jobs:
