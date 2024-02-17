@@ -1,19 +1,19 @@
-on: 
-  push: 🚀 
+on:
+  push:
     branches:
       - main
-  jobs:
-    web-deploy:
-      name: 🎉 Deploy
-      runs-on: ubuntu-latest
-      steps:
-      - name: 🚚 Get latest code
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get latest code
         uses: actions/checkout@v3
-      
-      - name: 📂 Sync files
+
+      - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.HOST}}
-          username: ${{ secrets.NAME}}
-          password: ${{ secrets.SENHA}}
+          server: ${{ secrets.HOST }}
+          username: ${{ secrets.NAME }}
+          password: ${{ secrets.SENHA }}
           server-dir: public_html/thema02/
